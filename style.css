@@ -125,7 +125,7 @@ div.location > p {
 }
 
 div.eviction-details {
-    margin-left: 2rem;
+    /* margin-left: 0.5rem; */
     font-weight: 600;
 }
 
