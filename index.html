@@ -63,9 +63,9 @@
             </div> -->
         </div>
     </main>
-    
+
     <script>
-        fetch("http://localhost:8000/cards/evictions.json")
+        fetch("evictions.json")
         .then(response => response.json())
         .then(json => console.log(json))
         .catch(error => console.error('Error loading JSON:', error));
