@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cherry Salazar | NYC Executed Evictions</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1 class="title">Executed Evictions in New York City </h1>
+        <h2>(as of March 8, 2025) </h2>
+    </header>
+
+    <main>
+        <div id="filters">
+            <div id="filter-boroughs">
+                <h3>Filter by borough: </h3>
+                <button id="manhattan" value="MANHATTAN">Manhattan</button>
+                <button id="brooklyn" value="BROOKLYN">Brooklyn</button>
+                <button id="bronx" value="BRONX">Bronx</button>
+                <button id="staten" value="STATEN ISLAND">Staten Island</button>
+                <button id="queens" value="QUEENS">Queens</button>
+                <button id="all-boroughs" value="all">Show All</button>
+            </div>
+
+            <div id="filter-years">
+                <h3>Filter by year: </h3>
+                <button id="2015" value="2015">2015</button>
+                <button id="2016" value="2016">2016</button>
+                <button id="2017" value="2017">2017</button>
+                <button id="2018" value="2018">2018</button>
+                <button id="2019" value="2019">2019</button>
+                <button id="2020" value="2020">2020</button>
+                <button id="2021" value="2021">2021</button>
+                <button id="2022" value="2022">2022</button>
+                <button id="2023" value="2023">2023</button>
+                <button id="2024" value="2024">2024</button>
+                <button id="2025" value="2025">2025</button>
+                <button id="all-years">Show All</button>
+            </div>
+        </div>
+
+        <div id="container">
+            <!-- <div class="card">
+                <div class="location">
+                    <h2 class="address">450 EAST 105TH STREET </h2>
+                    <p><span class="neighborhood">East Harlem South</span>, <span class="borough">MANHATTAN</span> <span class="zip-code">10029</span></p>
+                </div>
+                <div class="eviction-details">
+                    <p class="docket">Docket number: <span class="docket-num">001698</span></p>
+                    <p class="date">Executed date: <span class="date-executed">3/3/25</span></p>
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <script src="evictionsData.js"></script>
+    <script src="filterCards.js"></script>
+
+    <footer>
+        <div class="content">
+          <p><i><b>Data source:</b> <a href="https://data.cityofnewyork.us/" target="_blank">NYC Open Data</a>.</i> This page was developed in partial fulfillment of the requirements for the <i>Coding the News</i> (Spring 2025) class under <a href="http://github.com/rahulMuk/">Rahuldev Mukherjee</a> at the Craig Newmark Graduate School of Journalism at CUNY. </p>
+        </div>
+      </footer>
+
+</body>
+</html>

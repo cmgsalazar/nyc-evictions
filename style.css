@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #edf2f4;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1.title {
+    font-size: 2rem;
+    color: #003566;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    letter-spacing: .05em;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#filters {
+    padding: 0 20% 3rem;
+}
+
+#filters h3 {
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline;
+}
+
+#filter-boroughs,
+#filter-years {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    background-color: #14213d;
+    color: #ffffff;
+    display: inline;
+}
+
+.hover {
+    background-color: #fca311;
+    color: #14213d;
+    border: 1px solid #808080;
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: #9e2a2b;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer; 
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+div#container > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div.card {
+    max-width: 280px;
+    width: 100%;
+    padding: 2rem;
+    height: auto;
+    border-bottom: #c91515 double 10px;
+    border-right: #c91515 double 5px;
+    border-top: #c91515 solid 1px;
+    border-left: #c91515 solid 0.5px;
+    align-self: stretch; /* makes height of cards equal */ 
+    background-color: #f4efdea8;
+}
+
+div.location {
+    margin-bottom: 0.8em;
+}
+
+.address {
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    line-height: 1.1em;
+}
+
+.neighborhood,
+.borough,
+.zip-code,
+div.location > p {
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #686868;
+}
+
+div.eviction-details {
+    margin-left: 2rem;
+    font-weight: 600;
+}
+
+.docket-num,
+.date-executed {
+    font-weight: 400;
+}
+
+footer {
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    background: #1d2d44;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #edf2f4;
+    margin-top: 4em;
+    padding: 4em 20%;
+}
+
+footer a {
+    color: #fca311;
+}
+
+/* mobile-version */
+@media (min-width: 799px) and (max-width: 1200px) { 
+    header {
+        padding: 2em;
+    }
+
+    header h1.title{
+        font-size: 2em;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    div.card {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 798px) {
+    header {
+        padding: 2em;
+    }
+
+    header h1.title {
+        font-size: 2em;
+    }
+
+    div.card {
+        max-width: 400px;
+        padding: 1rem;
+    }
+} 
