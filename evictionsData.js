@@ -60,4 +60,4 @@ fetch("evictions.json")
     });
     console.log(json);
 .catch(error => console.error('Error loading JSON:', error));
-
+});
