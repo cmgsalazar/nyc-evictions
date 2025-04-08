@@ -56,7 +56,7 @@ fetch("evictions.json")
             item["Eviction Postcode"],
             item["Docket Number"],
             item["Executed Date"]
-        );
+        )
     });
     console.log(json);
 .catch(error => console.error('Error loading JSON:', error));
