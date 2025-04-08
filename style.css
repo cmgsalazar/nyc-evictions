@@ -103,7 +103,7 @@ div.card {
     border-top: #c91515 solid 1px;
     border-left: #c91515 solid 0.5px;
     align-self: stretch; /* makes height of cards equal */ 
-    background-color: #f4efdea8;
+    background-color: #fffaf2;
 }
 
 div.location {
